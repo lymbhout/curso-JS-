@@ -55,6 +55,7 @@ let neumatico2 = 20;
 let neumatico3 = 9;
 let uno;
 let dos;
+let tres;
 
 alert ("Usted actuamente esta en la seccion de neumaticos, y tiene para escojer entre 3 tipos de productos con su repectivo precio, la cual debera escojer uno de las tres opciones,para luego decidir la cantidad que decea comprar y al final saldra su compra total ");
 let pront = Number(prompt(`Neumatico (1): ${neumatico1} $.
@@ -67,16 +68,20 @@ function algoritmo(){
         uno = Number(prompt(`Neumatico(1) ${neumatico1}$. Cuantos desea?`))
         alert( uno);
          dos = uno * neumatico1
+        tres = neumatico1
+
         return dos
     }else if (pront === 2){
         uno =  Number(prompt(`Neumatico(2) ${neumatico2}$. Cuantos desea?`))
         alert(uno)
          dos = uno * neumatico2
+        tres = neumatico2
         return dos
     }else if (pront === 3){
         uno =  Number(prompt(`Neumatico(3) ${neumatico3}$. Cuantos desea?`))
         alert (uno)
           dos = uno * neumatico3
+        tres = neumatico3
         return dos
     }else{
         alert("No es un numero valido, debe colocar 1, 2 o 3")
@@ -87,8 +92,8 @@ algoritmo();
 
 alert(`gracias por su compra
 actualmente lleva
-${uno} compras de ${dos}$
-total: ${uno * dos}$.`);
+${uno} compras de ${tres}$
+total: ${uno * tres}$.`);
 
 
 
