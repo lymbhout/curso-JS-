@@ -102,18 +102,23 @@
 
 let persona;
 const personas = [];
-let p;
-
+let posicion;
+let i;
+let multiplicador =  20;
+const turno = (personas) =>{
+    if (personas === i ){
+        alert (`${persona} tiene el turno N ${i + 1} y debe esperar ${multiplicador * i} minutos aproximadamente!!`);
+    }
+}
 const acumularP = () =>{
-    for (let i = 0; i <= 4; i++){
-        persona = prompt("ingrese su nombre")
+    for ( i = 0; i <= 3; i++){
+        persona = prompt("ingrese su nombre y apelido porfavor")
         personas.push(persona) 
+        turno(i);
+        posicion = console.log( personas.indexOf(personas[i])) 
     }
-    for( let j = 0; j < personas.length; j ++){
-        p = personas[j]
-    }
-    return p
+    return posicion;
 }
 acumularP();
-// console.log(personas)
-console.log(p)
+console.log(personas)
+
